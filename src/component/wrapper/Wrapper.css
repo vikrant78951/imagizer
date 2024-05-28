@@ -1,0 +1,30 @@
+.section {
+    width: 100%;
+}
+
+
+.contentWrapper {
+    width: 100%;
+    max-width: 918px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.contentWrapper.big-wrapper {
+    max-width: 1180px;
+}
+
+.whiteBoard {
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.80);
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.06);
+    border: 1px solid #E2E4EA;
+    padding: 30px 20px 30px;
+}
+
+@media screen and (max-height:768px) {
+    .whiteBoard {
+        padding:20px;
+    }
+
+}

@@ -1,0 +1,357 @@
+.mapnreview-table {
+    padding: 48px 0 56px
+}
+
+.mapnreview-table .contentWrapper {
+    max-width: 1146px;
+}
+
+.mapnreview-table .whiteBoard {
+    padding: 0;
+}
+
+.mapnreview-table .table-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+}
+
+.mapnreview-table .filter {
+    display: flex;
+    z-index: 3;
+}
+
+.mapnreview-table .filter .input-container {
+    /* min-width: 170px; */
+}
+
+.mapnreview-table .filter .input-container .css-1fdsijx-ValueContainer {
+    padding: 0 0 0 16px;
+}
+
+.mapnreview-table .table {
+    margin: 10px 0 0;
+    width: 100%;
+}
+
+.mapnreview-table .table-head .button.secondary {
+    height: 46px;
+}
+
+.mapnreview-table .table-head .button.secondary .txt {
+    color: #111;
+    font-size: 14px;
+}
+
+
+.mapnreview-table .table thead,
+.mapnreview-table .table tbody tr {
+    border-bottom: 1px solid #E2E4EA;
+}
+
+
+
+
+.mapnreview-table .table tbody>tr:hover {
+    background: #F3F6FA;
+}
+
+.mapnreview-table .table thead th {
+    padding: 5px 0 24px 15px;
+    vertical-align: middle;
+}
+
+.mapnreview-table .table thead th .para.semiBold {
+    text-align: left;
+}
+
+.mapnreview-table .table thead th:first-of-type {
+    padding: 0 15px 15px;
+}
+.table .min-w-200{
+    min-width: 200px;
+}
+
+.mapnreview-table .table thead th:first-of-type .form.horizontal-gap-layout .form-row {
+    gap: 0;
+}
+
+/* .mapnreview-table .table thead th:last-of-type {
+    padding: 0 15px 15px 15px;
+} */
+
+.mapnreview-table .table tbody tr td {
+    vertical-align: middle;
+    padding: 15px;
+}
+
+.mapnreview-table .table tbody tr td button {
+    position: relative;
+    z-index: 2;
+}
+
+.mapnreview-table .table tbody tr td button:disabled {
+    cursor: not-allowed;
+}
+
+.mapnreview-table .table tbody tr td button:disabled,
+.mapnreview-table .table tbody tr td button:disabled svg,
+.mapnreview-table .table tbody tr td button:disabled svg path {
+    color: gray;
+    stroke: gray;
+}
+
+
+.mapnreview-table .table tbody tr td:first-child {
+    max-width: 200px;
+}
+
+.mapnreview-table .table tbody tr td:first-child .para {
+    word-break: break-word;
+    position: relative;
+    z-index: 2;
+}
+
+
+/* .mapnreview-table .table tbody tr td img {
+    width: 72px;
+    height: 72px;
+    border-radius: 10px;
+    object-fit: cover;
+} */
+
+.mapnreview-table .table tbody tr td .image-container {
+    width: 72px;
+    min-height: 53px;
+    max-height: 72px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* .mapnreview-table .table tbody tr td .image-container img {
+    width: 186px;
+    height: 132px;
+} */
+
+
+.mapnreview-table .table tbody tr td img {
+    width: 100%;
+    object-fit: unset;
+}
+
+
+.mapnreview-table .table tbody tr td .info .data {
+    display: inline-block;
+    min-width: 83px;
+    margin: 0 15px 0 0;
+    position: relative;
+    z-index: 5;
+}
+
+.mapnreview-table .table tbody tr td .info .value {
+    position: relative;
+    z-index: 1;
+}
+
+download-btn {}
+
+.mapnreview-table .table tbody tr td .button.primary.outline .txt {
+    font-weight: 400;
+}
+
+.mapnreview-table .table tbody tr td .outline-button .txt {
+    line-height: 1;
+}
+
+.mapnreview-table .table tbody tr td .action-container {
+    display: flex;
+    gap: 12px;
+}
+
+.mapnreview-table .table tbody tr td .action .button {
+    max-width: 134px;
+    text-align: left;
+    height: auto;
+    min-height: 32px;
+    padding: 11px 16px
+}
+
+.mapnreview-table .row-hidden {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.mapnreview-table .row-hidden * {
+    margin: 0;
+    padding: 0;
+    display: none
+}
+
+
+.mapnreview-table .row-visible {
+    max-height: 1000px;
+    overflow: visible;
+    opacity: 1;
+    transition: max-height 0.3s ease-in, opacity 0.3s ease-in;
+    position: relative;
+}
+
+.mapnreview-table .table tbody .collapse-tr td {
+    padding: 8px 5px;
+}
+
+.mapnreview-table .collapse-all {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.mapnreview-table .info-detail {
+    display: flex;
+
+}
+
+.mapnreview-table .para {
+    margin: 0 14px 0 0;
+    text-align: left;
+
+}
+
+.mapnreview-table .para .link {
+    word-break: break-all;
+}
+
+.mapnreview-table .para .bold {
+    margin: 0 4px 0 0;
+}
+
+.mapnreview-table .para .value {
+    white-space: nowrap;
+    max-width: 170px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.map-from-sutterstock table {
+    width: 100%;
+}
+
+
+.popup.create-pattern-popup .popup-content {
+    padding: 24px;
+}
+
+/* delete image button  */
+
+.mapnreview-table .image-container {
+    position: relative;
+}
+
+.mapnreview-table .button.absolute-button {
+    position: absolute;
+    bottom: 4px;
+    right: 41px;
+}
+
+.map-pattern .popup-header .title {
+    font-weight: normal;
+}
+
+.mapnreview-table .popup-header .title {
+    font-weight: normal;
+}
+
+.mapnreview-table .image-container,
+.mapnreview-table .review-3-option button,
+.mapnreview-table .action-container .tooltip-container,
+.mapnreview-table .action-container button {
+    position: relative;
+    z-index: 2;
+}
+
+.mapnreview-table .table tbody tr td .showMore {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    /* background-color: #111111a1; */
+    display: flex;
+    justify-content: flex-end;
+    /* align-items: flex-end; */
+    padding: 5px;
+}
+
+.mapnreview-table .table tbody tr td .tooltip-container.active+.dropdown-content {
+    display: block;
+}
+
+.mapnreview-table .table tbody tr td .action-container .dropdown .dropdown-content {
+    transform: translate(30px, 0);
+    right: 0px;
+    left: unset;
+}
+
+.mapnreview-table .table tbody tr td .copy-mapping.dropdown-content .dropdown-box:before {
+    left: unset;
+}
+
+/* .mapnreview-table {
+    overflow: hidden;
+} */
+
+@media screen and (max-width:119ppx) {
+    .mapnreview-table .table tbody tr td {
+        padding: 10px 0 10px 10px;
+    }
+
+    .mapnreview-table .table thead th:first-of-type {
+        padding: 0 0 10px 10px;
+    }
+
+    .mapnreview-table .table thead th {
+        padding: 5px 0 15px 15px;
+    }
+}
+
+.css-1nmdiq5-menu {
+    min-width: 130px;
+}
+
+.mapnreview-table .table tbody tr td .input-container.checkbox-container {
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.mapnreview-table .table tbody tr td .input-container.checkbox-container {
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.mapnreview-table .table tbody tr td .input-container.checkbox-container input {
+    cursor: pointer;
+}
+
+ 
+@media screen and (max-height:768px) {
+    .mapnreview-table .table tbody tr td{
+        padding: 8px 20px;
+    }
+    
+    .mapnreview-table .table-head{
+        padding: 20px 24px 10px;
+    }
+
+    .mapnreview-table {
+        padding: 20px;
+    }
+}

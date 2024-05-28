@@ -1,0 +1,75 @@
+.block-keyword-page .form .input-container.react-select .css-13cymwt-control,
+.block-keyword-page .form .input-container.react-select .css-t3ipsp-control {
+    height: 48px;
+    padding: 0 114px 0 0;
+    max-width: unset;
+
+}
+
+.block-keyword-page .form .input-container.react-select .css-b62m3t-container {
+    margin: 0;
+}
+
+.block-keyword-page .form .input-container input {
+    height: 48px;
+    margin: 0;
+
+}
+
+.block-keyword-page .form .singular-input-container {
+    max-width: 549px;
+}
+
+.block-keyword-page .form .singular-input {
+    position: relative;
+}
+
+.block-keyword-page .form .singular-input button {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    margin: 0;
+    width: 106px;
+    z-index: 5;
+
+}
+
+.block-keyword-page .form .singular-input-container .para {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.block-keyword-page .form .singular-input-container .para .icon {
+    display: flex;
+    /* margin-right: 8px; */
+}
+
+.block-keyword-page .form {
+    margin-bottom: 32px;
+}
+
+.block-images .whiteBoard {
+    padding-bottom: 0;
+}
+
+
+.block-images .image-data-container{
+    max-height: calc(100vh - 360px) ;
+    overflow: scroll;
+}
+
+.block-keyword-page .table-container {
+    max-height: 400px;
+    max-height: calc(100vh - 380px);
+    overflow-x: scroll;
+    padding-right: 10px;
+}
+
+ 
+@media screen and (max-height:768px) {
+    .block-keyword-page .table-container {
+        max-height: calc(100vh - 330px);
+    }
+    
+}

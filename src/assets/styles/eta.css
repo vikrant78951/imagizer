@@ -1,0 +1,16 @@
+.operation-details section.page-content {
+    padding: 36px 0 36px;
+}
+
+.operation-details .page-content .whiteBoard {
+    padding: 0px;
+}
+
+.operation-details .page-content .custom-table {
+    border: none;
+}
+
+
+.operation-details .page-content .custom-table .para.xs {
+    max-width: 200px;
+}

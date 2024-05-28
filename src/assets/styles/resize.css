@@ -1,0 +1,63 @@
+.resize-n-host .form.horizontal-gap-layout .title {
+    margin-bottom: 24px;
+}
+
+.resize-n-host .page-content {
+    padding: 36px 0 36px;
+}
+
+.resize-n-host .page-content .whiteBoard {
+    padding: 40px 24px;
+}
+
+
+.resize-n-host .form .form-row>div.file-upload-container,
+.resize-n-host .form .form-row>div.size-container {
+    flex-grow: 0;
+}
+
+.resize-n-host .form .form-row>div.file-upload-container .choose-file {
+    min-height: 202px;
+    width: 480px;
+}
+
+.resize-n-host .form .form-row>div.file-upload-container .upload-file-container {
+    min-height: 202px;
+    width: 480px;
+}
+
+.resize-n-host .form .form-row{
+    justify-content: flex-start;
+}
+
+.resize-n-host .form .form-row>div.size-container .input-container {
+    max-width: 230px;
+}
+
+.resize-n-host .form .form-row>div.size-container .input-container.image-link {
+    max-width: unset;
+}
+
+.resize-n-host .form .form-row>div.size-container .input-container.image-link .button {
+    padding: 10px 0 10px;
+}
+
+.resize-n-host .form .form-row>div.size-container .input-container.checkbox-container {
+    margin-top: 24px;
+}
+
+
+.resize-n-host .form .form-row button.primary {
+    max-width: 174px;
+}
+
+.resize-n-host .form .form-row.button-container {
+    justify-content: flex-end;
+}
+
+.resize-n-host .form .form-row.button-container .link{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        cursor: pointer;
+}

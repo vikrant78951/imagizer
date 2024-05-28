@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Uploader</title>
+</head>
+
+<style>
+    #imageList {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #imageList {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .image {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        flex-grow: 1;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 200px;
+
+    }
+
+    .preview {
+        height: 50px;
+        width: 50px;
+        margin: 30px;
+    }
+</style>
+
+<body>
+    <h1>Image Uploader</h1>
+    <form action="">
+        <input type="file" id="imageInput" accept="image/*,.svg" multiple>
+        <input type="reset" value="Clear File" id="clearButton">
+    </form>
+    <div id="imageList"></div>
+
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const imageInput = document.getElementById("imageInput");
+            const imageList = document.getElementById("imageList");
+            const form = document.querySelector('form');
+            const clearButton = document.getElementById('clearButton');
+
+            imageInput.addEventListener("change", handleImageUpload);
+
+            function handleImageUpload(event) {
+                const files = event.target.files;
+
+                for (let i = 0; i < files.length; i++) {
+                    const file = files[i];
+                    const imageElement = document.createElement("div");
+                    imageElement.classList.add("image");
+
+                    const fileName = document.createElement("p");
+                    fileName.textContent = file.name;
+
+                    const imagePreview = document.createElement("img");
+                    imagePreview.classList.add("preview");
+                    imagePreview.src = URL.createObjectURL(file);
+
+                    const svgButton = document.createElement("button");
+                    svgButton.textContent = "Copy SVG";
+                    svgButton.addEventListener("click", () => copySVG(file));
+
+                    imageElement.appendChild(fileName);
+                    imageElement.appendChild(imagePreview);
+                    imageElement.appendChild(svgButton);
+
+                    imageList.appendChild(imageElement);
+                }
+            }
+
+            function copySVG(file) {
+                const reader = new FileReader();
+
+                reader.onload = function (event) {
+                    const svgCode = event.target.result;
+                    copyToClipboard(svgCode);
+                };
+
+                reader.readAsText(file);
+            }
+        });
+
+        function copyToClipboard(text) {
+            // Create a textarea element
+            const textarea = document.createElement('textarea');
+            textarea.value = text;
+
+            // Append the textarea to the document
+            document.body.appendChild(textarea);
+
+            // Select the text in the textarea
+            textarea.select();
+
+            try {
+                // Execute the copy command
+                const success = document.execCommand('copy');
+                if (success) {
+                    console.log('Text copied to clipboard');
+                } else {
+                    console.error('Copy to clipboard failed');
+                }
+            } catch (err) {
+                console.error('Copy to clipboard failed with error:', err);
+            }
+
+            // Remove the textarea from the document
+            document.body.removeChild(textarea);
+        }
+
+        clearButton.addEventListener('click', () => {
+            // Clear the imageList by removing all child elements
+            while (imageList.firstChild) {
+                imageList.removeChild(imageList.firstChild);
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 101;
+    background: rgba(0, 0, 0, 0.50);
+    padding: 0 15px;
+    overflow: auto;
+}
+
+.popup .popup-content {
+    width: 512px;
+    min-height: 330px;
+    border-radius: 20px;
+    background: #FFF;
+    overflow: hidden;
+
+}
+
+.popup.full-size .popup-content {
+    width: 100%;
+    max-width: 1116px;
+    min-height: 816px;
+}
+
+
+.popup .popup-content .popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.popup .popup-content .popup-header .icon-button:hover path {
+    stroke: #000;
+}
+
+.popup .popup-content .head {
+    height: 226;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.popup .popup-content .head .logo {
+    padding: 30px;
+    display: flex;
+}
+
+.popup .popup-content .head .logo svg {
+    width: 80px;
+    height: 80px;
+}
+
+.popup .popup-content .head .title {
+    margin: 0 0 10px;
+    text-transform: capitalize;
+}
+
+.popup .popup-content .head .para {
+    margin: 0 0 30px
+}
+
+.popup .popup-content .footer {
+    background: #F3F6FA;
+    border-top: 1px solid #E2E4EA;
+    padding: 24px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.popup .popup-content .footer .button {
+    min-width: 216px;
+}
+
+ 
+@media screen and (max-height:816px) {
+    .popup.full-size .popup-content {
+        min-height: unset;
+    }
+}
+
+
+@media screen and (max-height:769px) {
+    .popup {
+        align-items: flex-start;
+        padding: 15px;
+    }
+}

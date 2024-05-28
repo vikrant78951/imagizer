@@ -1,0 +1,44 @@
+.mapNreview .atf {
+    border-bottom: 1px solid #E2E4EA;
+}
+
+.mapNreview .atf {
+    background: #fff;
+}
+
+.mapNreview .atf {
+    padding: 30px 0 30px;
+}
+
+.mapNreview .atf .head .title {
+    margin: 0 0 30px;
+}
+
+.mapNreview .atf .head .para {
+    margin: 0 0 24px;
+}
+
+ .dropdown-menu > .navbar-link {
+    transform: rotate(90deg);
+    display: flex;
+
+}
+
+.mapNreview .dropdown-menu > .navbar-link  .icon{
+   margin: 0;
+    
+}
+
+
+@media screen and (max-height:768px) {
+    .mapNreview .atf {
+        padding: 25px 0 20px;
+    }
+
+    .mapNreview .atf .head .title{
+        margin: 0 0 15px;
+    }
+}
+
+
+ 

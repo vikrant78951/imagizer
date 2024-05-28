@@ -1,0 +1,60 @@
+.map-n-review-instruction .whiteBoard {
+    padding-bottom: 4px;
+}
+
+/* login instruction  */
+
+.login-instruction {
+    position: relative;
+    width: 608px;
+    height: 740px;
+    display: flex;
+    align-items: flex-end;
+    padding: 48px;
+    background-position: center;
+    border-radius: 20px;
+
+}
+
+.login-instruction .instruction-card {
+    width: 100%;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(17px);
+    border: 1px solid #ffffff4a;
+}
+
+.login-instruction .instruction-card {
+    padding: 30px;
+}
+
+.login-instruction .instruction-card .seprator {
+    margin: 24px 0 24px;
+}
+
+.login-instruction .instruction-card .seprator .line {
+    opacity: 0.20000000298023224;
+    background: #111;
+}
+
+
+/* Man and review instructions  */
+
+.map-n-review-instruction {
+    padding: 0 0 20px;
+}
+
+.map-n-review-instruction .head {
+    padding: 48px 0 24px;
+}
+
+.map-n-review-instruction .title {
+    font-weight: normal;
+}
+
+@media screen and (max-height:768px) {
+    .map-n-review-instruction .head {
+        padding: 20px;
+    }   
+}
+

@@ -1,0 +1,94 @@
+@Library('autoopt-kbb-jenkins') _
+
+def parallelBuilds = [:]
+buildData = [:]
+
+// Currently making only for kube. Will update for DCs
+def setupData = [
+    "k8s-kbb-c8": [
+        "dockerfile": "Dockerfile",
+        "container": "imageanalyzer-v2",
+        "directory": "kubectlManifests/k8s-kbb-c8/apps/imageanalyzer-v2",
+        "file_name": "deployment.yml",
+        "is_cron": false
+    ]
+]
+
+pipeline {
+  
+  options {
+    buildDiscarder logRotator(artifactDaysToKeepStr: '90', artifactNumToKeepStr: '50', daysToKeepStr: '90', numToKeepStr: '50')
+    gitLabConnection 'tree'
+  }
+
+  parameters {
+    string defaultValue: 'master', description: '', name: 'branch', trim: true
+    string defaultValue: 'imageanalyzer', description: '', name: 'repo', trim: true
+  }
+
+  agent {
+    label 'ci_adc'
+  }
+
+
+  stages { 
+    stage('Prepare Parallel'){
+      steps {
+        script{
+            echo "Building "   
+            setupData.each{k,v ->
+                echo k
+                v["branch"]   = "${branch}"
+                v["repo"]   = "${repo}"
+                v["kube_setup"]   = "${k}" 
+                
+                v["dockerfile"] = v.containsKey("dockerfile") ? v["dockerfile"] : "${dockerfile}"
+                v["directory"] = v["directory"]
+                v["file_name"] = v["file_name"]
+                v["container"] = v["container"] 
+                v["is_cron"] = v["is_cron"]    
+                echo "${v}"
+                
+                parallelBuilds["Setup: ${k}"] = buildStepsKube(v)     
+            }
+          
+        }
+      }
+    }
+    stage('build parallel') {
+      steps {
+        script{
+            echo "${parallelBuilds}"
+          parallel parallelBuilds
+        }  
+      }
+    }
+  }
+}
+
+def buildStepsKube(Map params) {
+  return {
+    node("ci_adc") {
+      dir("${params.profile}") {
+        stage('Git') {
+          echo "${params}"
+          git branch: "${params.branch}", url: "git@tree.mn:${params.repo}/imageanalyzer_v2"
+        }
+        stage('docker build & push') {
+          buildData["pushed_docker_image_${params.kube_setup}"] = dockerKbb registry: 'harbor-adc.internal.media.net',
+                imageName: "kbb/imageanalyzer-prod-${params.kube_setup}",
+                tag: "${BUILD_NUMBER}",
+                credential: 'kbb_adc_bot',
+                dockerfile: "${params.dockerfile}"
+        }
+        stage('argo deploy') {
+          argoDeploy image: buildData["pushed_docker_image_${params.kube_setup}"],
+              container: "${params.container}",
+              directory: "${params.directory}",
+              file_name: "${params.file_name}",
+              is_cron: "${params.is_cron}"
+        }
+      }
+    }
+  }
+}

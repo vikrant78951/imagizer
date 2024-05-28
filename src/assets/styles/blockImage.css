@@ -1,0 +1,33 @@
+.block-images .page-content {
+    margin-top: 36px;
+}
+
+.block-images .tab-content {
+    display: none;
+}
+
+.block-images .tab-content.active {
+    display: block;
+}
+
+/* .block-images .page-content .block-image-container {
+    max-height: 550px;
+    overflow-x: auto;
+} */
+
+.block-images .page-content .form .input-container .error {
+    top: unset;
+}
+
+.block-images .page-content .input-container input {
+    padding: 16px 160px 17px 16px;
+}
+
+@media screen and (max-height:768px){
+    .block-images .page-content {
+        margin-top: 20px;
+    }
+    .block-images .image-data-container {
+        max-height: calc(100vh - 315px) !important;
+    }
+}

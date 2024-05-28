@@ -1,0 +1,346 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    transition: .3s ease;
+    cursor: pointer;
+    gap: 12px;
+    appearance: none;
+    border: 1px solid transparent;
+    color: #9B9B9B;
+    height: max-content;
+}
+
+.button:focus-visible {
+    outline: none;
+    box-shadow: none;
+}
+
+
+.button[disabled],
+.button[disabled]:hover {
+    cursor: not-allowed;
+}
+
+.outline-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 16px;
+    border-radius: 10px;
+    transition: .3s ease;
+    cursor: pointer;
+    gap: 12px;
+    appearance: none;
+    border: 1px solid #E2E4EA;
+    background: #FFF;
+}
+
+.outline-button:hover {
+    border-color: #111111;
+}
+
+.outline-button:hover .txt {
+    color: #111111;
+}
+
+.button.anchor {
+    text-decoration: none;
+}
+
+.button.l,
+.outline-button.l {
+    height: 56px
+}
+
+.button.m,
+.outline-button.m {
+    height: 48px;
+}
+
+.button.s,
+.outline-button.s {
+    height: 40px
+}
+
+.button.xs,
+.outline-button.xs {
+    height: 32px;
+}
+
+.outline-button.xs {
+    padding: 8px 16px;
+    gap: 4px;
+}
+
+.button .logo,
+.outline-button .logo {
+    width: 18px;
+    height: 18px;
+}
+
+.button .txt,
+.outline-button .txt {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 144%
+}
+
+.button.l .txt,
+.outline-button.l .txt {
+    font-size: 18px;
+}
+
+.button.m .txt,
+.outline-button.m .txt {
+    font-size: 16px;
+}
+
+.button.s .txt,
+.outline-button.s .txt {
+    font-size: 14px;
+}
+
+.button.xs .txt,
+.outline-button.xs .txt {
+    font-size: 12px;
+}
+
+.outline-button.xs .txt {
+    font-weight: 400;
+}
+
+.button.outline .logo,
+.outline-button .logo {
+    height: 14px;
+    width: 14px;
+}
+
+
+
+/* primary button  */
+.button.primary {
+    background: #EA4555;
+    color: #fff;
+}
+
+
+.button.primary .txt {
+    color: #FFF;
+}
+
+.button.primary:hover {
+    background: #c63846;
+    color: #fff;
+}
+
+
+.button.primary.outline {
+    border-radius: 30px;
+    border: 1px solid #EA4555;
+    background: #FFF;
+}
+
+
+.button.primary.outline .txt {
+    color: #EA4555;
+}
+
+.button.primary.outline svg path {
+    stroke: #EA4555;
+}
+
+.button.primary.outline:hover {
+    border: 1px solid #EA4555;
+    background: #EA4555;
+}
+
+ 
+
+.outline.default-radius {
+    border-radius: 10px !important;
+}
+
+
+.button.primary:hover .logo svg,
+.button.primary:hover .logo svg path {
+    stroke: #FFF;
+}
+
+.button.primary:hover .txt {
+    color: #FFF;
+}
+
+/* secondary button  */
+.button.secondary {
+    border: 1px solid #E2E4EA;
+    background: #FFF;
+    color: #9B9B9B
+}
+
+
+
+.button.secondary .txt {
+    color: #9B9B9B;
+}
+
+
+
+.button.secondary.outline {
+    border-radius: 30px;
+    background: #EAF2EA;
+    border: none;
+    border: 1px solid #EAF2EA;
+
+}
+
+.button.secondary.outline .txt {
+    color: #44AE6D;
+}
+
+.button.secondary.outline svg path {
+    stroke: #44AE6D;
+}
+
+.button.secondary:hover {
+    border: 1px solid #44AE6D;
+    background: #FFF;
+    color: #111111;
+}
+
+.button.secondary:hover .txt {
+    color: #111;
+}
+
+/* overridden classes  */
+.button.dark-text .txt {
+    color: #111;
+}
+
+
+
+
+/* outline borders  */
+.outline-button.primary {
+    border-color: #EA4555;
+}
+
+.outline-button.primary .txt {
+    color: #EA4555;
+}
+
+
+.outline-button.secondary {
+    border-color: #44AE6D;
+}
+
+.outline-button.secondary .txt {
+    color: #44AE6D;
+}
+
+.outline-button.tertiary {
+    border-color: #6868F6;
+}
+
+.outline-button.tertiary .txt {
+    color: #6868F6;
+}
+
+.outline-button .txt {
+    color: #9B9B9B;
+}
+
+
+
+/* icons button  */
+.icon-button {
+    width: 24px;
+    height: 24px;
+    appearance: none;
+    -webkit-appearance: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.icon-button * {
+    pointer-events: none;
+}
+
+/* anchor button  */
+.button.anchor {
+    background-color: none;
+    border-color: anchor;
+}
+
+.button.anchor.blue .txt {
+    color: #6868F6;
+}
+
+.button.anchor.blue:hover {
+    border-color: anchor;
+}
+
+.button.anchor.blue:hover .txt {
+    color: #111;
+}
+
+
+/* collapse button  */
+
+.button.collapse-btn {
+    width: 32px;
+    height: 32px;
+    padding: 2px;
+    border-radius: 100%;
+    transform-origin: left;
+    transition: 0s ease;
+    gap: 6px;
+    border: none;
+}
+
+.button.collapse-btn .txt {
+    transition: .3s ease;
+    display: none;
+}
+
+.button.collapse-btn .logo {
+    width: 20px;
+    height: 20px;
+}
+
+.button.collapse-btn:hover {
+    width: auto;
+    height: 32px;
+    border-radius: 10px;
+    border: none;
+    padding: 6px 10px;
+}
+
+.button.collapse-btn:hover .txt {
+    display: block;
+}
+
+.button.secondary.collapse-btn .txt {
+    color: #44AE6D;
+}
+
+
+/* white button  */
+
+.button.white {
+    border: 1px solid #E2E4EA;
+    background: #FFF;
+}
+
+.button.white .txt {
+    color: #111;
+}
+
+.button.white:hover {
+    color: #111;
+    border-color: #111;
+}

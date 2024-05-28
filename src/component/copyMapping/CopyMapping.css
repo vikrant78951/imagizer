@@ -1,0 +1,76 @@
+.copy-mapping.dropdown-content {
+    left: auto;
+    right: -30px;
+    transform: translate(0, 10px);
+}
+
+.copy-mapping.dropdown-content .dropdown-box:before {
+    right: 3px;
+    left: auto;
+}
+
+.copy-mapping.dropdown-content .dropdown-box {
+    padding: 16px 20px;
+    position: relative;
+}
+
+.copy-mapping.dropdown-content .dropdown-box .close {
+    position: absolute;
+    right: 10px;
+    top: 4px;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+}
+
+.copy-mapping.dropdown-content .dropdown-box .close svg {
+    height: 18px;
+}
+
+
+.copy-mapping.dropdown-content .para {
+    display: flex;
+    align-items: center;
+}
+
+.copy-mapping.dropdown-content .para .icons {
+    margin-right: 4px;
+    display: flex;
+}
+
+.copy-mapping.dropdown-content .form .input-container.react-select .css-13cymwt-control,
+.copy-mapping.dropdown-content .form .input-container.react-select .css-t3ipsp-control {
+    height: 48px;
+}
+
+.copy-mapping.dropdown-content .react-select .css-1fdsijx-ValueContainer {
+    padding: 5px 40px 5px 16px;
+}
+
+.copy-mapping.dropdown-content .form .input-container.react-select .css-13cymwt-control,
+.copy-mapping.dropdown-content .form .input-container.react-select .css-t3ipsp-control,
+.copy-mapping.dropdown-content .form .input-container.react-select .css-b62m3t-container {
+    min-width: 326px;
+}
+
+.copy-mapping.dropdown-content .form .button {
+    width: max-content;
+    margin: auto 0 0;
+
+}
+
+.copy-mapping.dropdown-content .form .input-container.react-select.multiselect .css-1p3m7a8-multiValue {
+    padding: 4px;
+}
+
+.copy-mapping.dropdown-content .form .input-container.react-select.multiselect .css-1jqq78o-placeholder {
+    color: #9B9B9B;
+    font-family: Lexend Deca;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 138%;
+}
+.copy-mapping .form .input-container .error{
+    top: unset;
+}

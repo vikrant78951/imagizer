@@ -1,0 +1,97 @@
+.toast {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    transform: translate(200%, 0);
+    min-width: 512px;
+    padding: 28px 24px;
+    border: 1px solid rgba(104, 104, 246, 0.20);
+    background-color: #ffffff;
+    display: flex;
+    gap: 21px;
+    transition: 1s ease;
+    z-index: 99999999;
+    border-radius: 20px;
+
+}
+
+.toast.show {
+    transition: .5s ease;
+    transform: translate(0, 0);
+}
+
+.toast .icon {
+    display: flex;
+}
+
+.toast .icon svg {
+    height: 32px;
+    width: 32px;
+}
+
+
+.toast .title {
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.toast .cross {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.toast .cross {}
+
+
+/* toast info style  */
+.toast.info {
+    border-color: #0EA5E9;
+}
+
+.toast.info .icon {
+    color: #0EA5E9
+}
+
+/* toast warning style  */
+.toast.warning {
+    background: #FDF0E6;
+}
+
+/* toast error style  */
+.toast.error {
+    background: #FAF1F2;
+}
+
+/* toast loading style  */
+.toast.loading {
+    background: #F3F6FA;
+}
+
+.toast.loading .icon svg {
+    color: #6868F6;
+}
+
+
+/* toast sucess style  */
+.toast.success {
+    background: #EAF2EA;
+}
+
+
+/* spin animation  */
+.spin svg {
+    position: relative;
+    animation: spin 1.2s infinite;
+}
+
+@keyframes spin {
+    40% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

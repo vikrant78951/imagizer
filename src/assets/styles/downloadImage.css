@@ -1,0 +1,152 @@
+.contentWrapper.big-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.download-image .form.horizontal-gap-layout {
+    padding: 20px 0 0;
+}
+
+.download-image .page-header .whiteBoard {
+    padding: 30px;
+}
+
+.download-image .page-content .whiteBoard.content {
+    padding: 10px 10px 0;
+}
+
+.download-image .page-content .download-image-content-container {
+    /* max-height: 600px; */
+    height: calc(100vh - 390px);
+    overflow-x: scroll;
+}
+
+
+.download-image .form.horizontal-gap-layout .input-container {
+    max-width: 20%;
+}
+
+.download-image .form.horizontal-gap-layout .input-container.mx-full {
+    max-width: 100%;
+}
+
+.download-image .form.horizontal-gap-layout .input-container.search-input-box {
+    max-width: 520px;
+}
+
+.download-image .form.horizontal-gap-layout .input-container.checkbox-container {
+    max-width: 30%;
+}
+
+.download-image .form.horizontal-gap-layout .input-container.single.red-border input {
+    border-color: #EA4555;
+}
+
+.download-image .form .input-container.download-from-shutterstock input {
+    margin: 0;
+}
+
+.download-image .form .input-container.react-select.multiselect .css-13cymwt-control,
+.download-image .form .input-container.react-select.multiselect .css-t3ipsp-control {
+    max-width: unset;
+}
+
+.download-image .form.horizontal-gap-layout .form-row .button {
+    min-width: 150px;
+}
+
+.card-container.big-card.download-images {
+    /* gap: 35px 18px; */
+    gap: 10px;
+}
+
+.card-container .download-card {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 16px;
+    cursor: pointer;
+}
+
+.css-1nmdiq5-menu {
+    z-index: 10;
+}
+
+.css-1nmdiq5-menu>div {
+    max-height: 200px;
+    z-index: 100;
+}
+
+
+.download-images .form .input-container.react-select .css-b62m3t-container {
+    z-index: unset;
+}
+
+/* export overlay  */
+.export-overlay {
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    width: 100%;
+    padding: 0 15px;
+    transition: .3s ease-in;
+}
+
+.export-overlay.show {
+    bottom: 0%;
+    z-index: 3;
+}
+
+.export-overlay .wrapper {
+    background: #ececec;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 0 -4px 6px -4px #c8c8c8;
+    border-radius: 0 0 10px 10px;
+
+}
+
+/* export overlay  */
+
+
+
+
+
+/* edit card  */
+
+
+.card-container .edit-card {}
+
+.card-container .edit-card .icon-button.black-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #111;
+}
+
+.card-container .edit-card .content-container .outline-button {
+    /* margin: auto; */
+    width: 100%;
+}
+
+.download-image .contentWrapper.big-wrapper {
+    margin-top: 0;
+}
+.download-image .section.page-content {
+    padding-top: 30px;
+}
+.download-image .section.page-content .map-n-review-instruction .head{
+    padding: 8px 0 24px;
+}
+@media screen and (max-height:768px) {
+
+    .download-image .page-content .download-image-content-container {
+        max-height: 600px;
+        height: calc(100vh - 380px);
+        overflow-x: scroll;
+    }
+
+}

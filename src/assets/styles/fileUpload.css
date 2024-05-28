@@ -1,0 +1,57 @@
+.file-upload-page section.page-content {
+    padding: 36px 0;
+}
+
+
+.file-upload-page section.page-content .form .input-container {
+    margin-top: 8px;
+    max-width: 516px;
+}
+
+
+.file-upload-page section.page-content .form .button-container {
+    display: flex;
+}
+
+.file-upload-page section.page-content .form .button-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+}
+
+.file-upload-page section.page-content .form .button-container .button {
+    max-width: 174px;
+}
+
+.file-upload-page section.page-content .form .upload-file-container,
+.file-upload-page section.page-content .form .choose-file {
+    min-height: 305px;
+}
+
+.file-upload-page .demo-file {
+    margin-top: 33px;
+}
+
+.file-upload-page .upload-file-wrapper .title {
+    margin-bottom: 16px;
+}
+
+.upload-file-wrapper .button-container {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.bulk-mapping-page section.page-content .form .button-container {
+    justify-content: space-between;
+}
+
+.bulk-mapping-page section.page-content .form .button-container div {
+    display: flex;
+    gap: 10px;
+}
+
+.bulk-mapping-page section.page-content .form .button-container .button {
+    max-width: unset;
+}

@@ -1,0 +1,31 @@
+/* demo files  */
+
+.demo-file {
+    background-color: #E9EBFA;
+    padding: 14px 24px;
+    border-radius: 10px;
+}
+
+.demo-file ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+.demo-file ul li:first-child {
+    display: flex;
+    align-items: center;
+
+}
+
+.demo-file ul li div.icon {
+    width: 39px;
+    height: 52px;
+    margin-right: 16px;
+}
+
+.demo-file ul li div.details .title {
+    margin-bottom: 6px;
+}

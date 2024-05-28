@@ -1,0 +1,28 @@
+.list li {
+    display: flex;
+    gap: 16px;
+}
+
+.list li:not(:last-of-type) {
+    margin: 0 0 26px;
+}
+
+.list li .icon {
+    display: flex;
+    align-items: center;
+    height: 24px;
+    font-size: 24px;
+}
+
+.list-with-title .list {
+    padding: 16px 0;
+}
+
+.list-with-title .list li:not(:last-of-type) {
+    margin: 0 0 12px;
+
+}
+
+.list-with-title .seprator {
+    margin: 0 0 16px
+}

@@ -1,0 +1,140 @@
+.hidden-button {
+    -webkit-user-select: none;
+    user-select: none;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    height: 0;
+    width: 0;
+    display: block;
+}
+
+
+.edit-image-popup {}
+
+.edit-image-popup .popup-content {
+    display: flex;
+    padding: 50px 20px;
+    position: relative;
+    width: min-content;
+}
+
+
+.edit-image-popup .popup-content .close-popup {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.edit-image-popup .popup-content .close-popup svg path {
+    stroke: #000;
+}
+
+.edit-image-popup .popup-content .left-section .image-container {
+    height: 800px;
+    width: 1200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f4f5;
+}
+
+
+.edit-image-popup .popup-content .right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+
+
+.edit-image-popup .tab-container {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.edit-image-popup .tab-container li {
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+}
+
+.edit-image-popup .tab-container li.active {
+    color: #E91B1B;
+    border-bottom-color: #E91B1B;
+}
+
+
+.edit-image-popup .size-list {
+    max-height: 290px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
+
+.edit-image-popup .size-list::-webkit-scrollbar {
+    width: 4px;
+}
+
+.edit-image-popup .size-list li {
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+.edit-image-popup .size-list li:hover p,
+.edit-image-popup .size-list li.active p {
+    color: #000;
+    font-weight: bold;
+}
+
+
+.para.bold {
+    font-weight: bold;
+}
+
+.edit-image-popup .cropingImage.loading {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+
+.edit-image-popup .cropingImage.loaded {
+    visibility: visible;
+    height: auto;
+    width: auto;
+}
+
+
+.edit-image-popup .form.horizontal-gap-layout {
+    gap: 10px;
+}
+
+.edit-image-popup .form.horizontal-gap-layout .input-container {
+    width: 50%;
+    max-width: unset !important;
+}
+
+.edit-image-popup .form.horizontal-gap-layout .input-container.sm input {
+    padding: 10px 6px;
+    height: auto;
+}
+
+
+.edit-image-popup .preview-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+}
+
+.preview {
+    max-height: 300px;
+    max-width: 150px;
+}
+
+
+
+.edit-image-popup .button.primary {
+    width: 100%;
+}

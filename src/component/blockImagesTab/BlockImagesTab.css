@@ -1,0 +1,33 @@
+.block-image-page .form{
+    margin-bottom: 40px;
+}
+.block-image-page .form .singular-input-container {
+    max-width: 549px;
+}
+
+.block-image-page .form .singular-input {
+    position: relative;
+}
+
+.block-image-page .form .singular-input button {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    margin: 0;
+    width: 126px;
+}
+
+.block-image-page .form .singular-input-container .para {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.block-image-page .form .singular-input-container .para .icon {
+    display: flex;
+}
+
+.block-image-page .form .input-container input {
+    height: 48px;
+    margin: 0;
+}

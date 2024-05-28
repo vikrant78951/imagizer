@@ -1,0 +1,66 @@
+.page-header .whiteBoard {
+    border: none;
+    border-bottom: 1px solid #E2E4EA;
+    background: #FFF;
+    box-shadow: none;
+    border-radius: 0;
+}
+/* 
+.page-header .title {
+    padding: 8px 0
+} */
+
+/* header-with-tab */
+
+.header-with-tab .whiteBoard {
+    padding: 30px  20px 0;
+}
+
+.page-header .tab-container {
+    padding: 28px 0 0;
+    display: flex;
+    gap: 36px;
+}
+
+.page-header .tab-container .tab-link {
+    color: #EA4555;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 144%;
+    position: relative;
+    cursor: pointer;
+    padding-bottom: 6px;
+    transition: scale .3s ease;
+}
+
+.page-header .tab-container .tab-link::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    height: 2px;
+    width: 0;
+    transition: width .3s ease;
+    background: #EA4555;
+}
+
+.page-header .tab-container .tab-link:hover::after {
+    width: 100%;
+}
+
+.page-header .tab-container .tab-link.active::after {
+    width: 100%;
+}
+.page-header .tab-content {
+    display: none;
+}
+
+.page-header .tab-content.active {
+    display: block;
+}
+
+@media screen and (max-height:767px){
+    .header-with-tab .whiteBoard {
+        padding: 20px  20px 0;
+    }   
+}

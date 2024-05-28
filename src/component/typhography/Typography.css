@@ -1,0 +1,119 @@
+/* title  */
+.title {
+    color: #111;
+    font-family: Lexend Deca;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+
+/* font weight */
+.title.regular {
+    font-weight: 400;
+}
+
+.title.medium {
+    font-weight: 500;
+}
+
+.title.semibold {
+    font-weight: 600;
+}
+
+/* title color  */
+
+.title.light {
+    color: #4C4C4C;
+}
+
+/* font size  */
+.title.l {
+    font-size: 40px;
+    letter-spacing: -2.4px;
+
+}
+
+.title.ml {
+    font-size: 28px;
+    letter-spacing: -0.56px;
+}
+
+.title.m {
+    font-size: 24px;
+    letter-spacing: -0.48px;
+}
+
+.title.sm {
+    font-size: 20px;
+    letter-spacing: -0.4px;
+}
+
+.title.s {
+    font-size: 18px;
+    letter-spacing: -0.36px;
+}
+
+.title.xs {
+    font-size: 16px;
+}
+
+.title.xxs {
+    font-size: 14px;
+    letter-spacing: -0.28px;
+
+}
+
+.title.xxxs {
+    font-size: 12px;
+}
+
+
+
+/* paragraph  */
+.para {
+    color: #9B9B9B;
+    font-family: Lexend Deca;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+
+/* paragraph color  */
+.para.dark {
+    color: #111;
+}
+
+.para.light {
+    color: #9B9B9B;
+}
+
+/* paragraph size  */
+.para.s {
+    font-size: 16px;
+}
+
+.para.xs {
+    font-size: 14px;
+}
+
+.para.xxs {
+    font-size: 12px;
+}
+
+.para.flex {
+    display: flex;
+}
+
+.para.link {
+    color: #6868F6;
+    cursor: pointer;
+}
+
+/* paragraph weight  */
+.para.semiBold {
+    font-weight: 500;
+}

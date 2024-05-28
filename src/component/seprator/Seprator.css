@@ -1,0 +1,33 @@
+.seprator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.seprator .line {
+    flex-grow: 1;
+    background: #E2E4EA;
+    height: 1px;
+    width: 100%;
+}
+
+.seprator .txt {
+    flex-shrink: 0;
+}
+
+.seprator.verticle-or-seprator {
+    flex-direction: column;
+    gap: 16px;
+}
+
+.seprator.verticle-or-seprator .line {
+    flex-grow: 1;
+    background: #E2E4EA;
+    height: 100%;
+    width: 1px;
+}
+
+.seprator .txt {
+    flex-shrink: 0;
+}

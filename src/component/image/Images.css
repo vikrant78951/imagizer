@@ -1,0 +1,6 @@
+/* .image-container img{
+    cursor: pointer;
+} */
+.clickableImage {
+   cursor: pointer; 
+}

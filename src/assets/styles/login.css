@@ -1,0 +1,93 @@
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: #FFF;
+}
+
+.login-page .wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1165px;
+    margin: 0 auto;
+    padding: 30px 15px
+}
+
+
+.login-page .wrapper .left-section {
+    padding-right: 15px;
+}
+
+.login-page .brand-logo {
+    width: 287.609px;
+    height: 30px;
+}
+
+.login-page .login-form-container {
+    max-width: 398px
+}
+
+.login-page .login-form-container .head {
+    padding: 88px 0 32px;
+}
+
+.login-page .login-form-container .title {
+    margin: 0 0 12px
+}
+
+.login-page .login-form-container .button {
+    width: 100%;
+}
+
+.login-page .login-form-container .seprator {
+    padding: 24px 0;
+}
+
+.login-page .login-form-container input {
+    width: 100%;
+}
+
+
+/* responsive */
+@media screen and (max-width:1200px) {
+    .login-page .wrapper {
+        max-width: 1124px;
+        background-position: center;
+        border-radius: 30px;
+        transition: .3s ease;
+        transform-origin: center;
+    }
+
+    .login-instruction {
+        width: 100%;
+        max-width: 570px;
+        transition: .3s ease;
+        transform-origin: center;
+        padding: 20px;
+        height: 657px;
+
+    }
+    .login-page .wrapper .left-section{
+        width: 60%;
+        padding-right: 50px;
+
+    }
+    .login-page .login-form-container{
+        max-width: unset;
+    }
+}
+
+
+
+/* responsive design  */
+
+@media screen and (max-height:960px) {
+        
+    .login-page{
+        align-items: flex-start;
+    }
+
+    
+}

@@ -1,0 +1,70 @@
+.image-upload-page .page-content {
+    padding: 36px 0;
+}
+
+.image-upload-page .page-content .description {}
+
+.image-upload-page .page-content .form.horizontal-gap-layout {
+    margin-top: 48px;
+}
+
+.image-upload-page .page-content .form.horizontal-gap-layout .input-container.react-select .css-b62m3t-container,
+.image-upload-page .page-content .form.horizontal-gap-layout .input-container.sm input,
+.image-upload-page .page-content .form.horizontal-gap-layout .form-row .button {
+    margin: 10px 0 0;
+}
+
+.image-upload-page .page-content .upload-file-wrapper .title {
+    margin: 0 0 10px;
+}
+
+.image-upload-page .page-content .upload-file-container,
+.image-upload-page .page-content .upload-file-container .choose-file {
+    min-height: 305px;
+
+}
+
+
+.image-upload-page .page-content .seprator {
+    margin-bottom: 8px;
+}
+
+.image-upload-page .page-content .form .form-row>div {
+    width: 50%;
+
+}
+
+.image-upload-page .page-content .form .form-row .checkbox-container {
+    margin: 20px 0 10px;
+}
+
+.image-upload-page .page-content .form .button-container {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.image-upload-page .page-content .form .button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image-upload-page .page-content .form .button-container .button {
+    max-width: 174px;
+}
+
+.image-upload-page .page-content .upload-file-wrapper .button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.image-upload-page .form.horizontal-gap-layout .input-container .error {
+    bottom: unset;
+}
+
+
+@media screen and (max-height:768px) {
+    .image-upload-page .page-content {
+        padding: 20px 0;
+    }
+}

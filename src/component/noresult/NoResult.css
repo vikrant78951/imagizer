@@ -1,0 +1,29 @@
+.no-result {
+    min-height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0;
+}
+
+.no-result svg circle {
+    fill: #fff;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.06);
+
+}
+
+.no-result .title {
+    padding: 30px 0 10px;
+}
+
+.no-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.no-data .title {
+    padding: 20px 0;
+}

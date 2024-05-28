@@ -1,0 +1,4 @@
+.form.create-pattern-form .input-container input {
+    max-width: unset;
+    width: 100%;
+}

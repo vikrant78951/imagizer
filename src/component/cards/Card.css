@@ -1,0 +1,214 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 32px 15px;
+}
+
+.card-container .card .image-container {
+    display: flex;
+    position: relative;
+}
+
+.card-container .card .image-container img {
+    width: 242px;
+    height: 152px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.card-container .card .image-container .copy-button {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transition: .3s ease;
+    box-shadow: 0px 0px 4px 1px #808080;
+    border-radius: 50%;
+    opacity: 0.5;
+
+}
+
+.card-container .card .image-container .copy-button:hover {
+    opacity: 1;
+
+}
+
+/* 
+.card-container .card .image-container .copy-button:hover svg circle {
+    fill: #111;
+}
+
+.card-container .card .image-container .copy-button:hover svg path {
+    stroke: #fff;
+} */
+
+.card-container.selection-mode .card * {
+    pointer-events: none;
+    user-select: none;
+}
+
+.card-container.selection-mode .card {
+    background-color: #f6f6f6;
+    border: 1px solid #E2E4EA;
+}
+
+.card-container.selection-mode .card.selected {
+    background-color: #f2fdf9;
+    border: 1px solid #00c094;
+}
+
+.card-container .card{
+    flex-grow: 1;
+    max-width: 257.5px;
+}
+
+.card-container .card .title {
+    margin: 8px 0 0 0;
+    max-width: 186px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 20px;
+
+}
+
+.card-container .card .para {
+    margin: 4px 0 12px 0;
+    width: max-content;
+}
+
+.card-container .card.mapping-card .button {
+    width: 186px;
+}
+
+
+/* big cards style */
+.card-container.big-card {
+    gap: 48px 32px;
+}
+
+.card-container.big-card .card .image-container img {
+    width: 242px;
+    height: 152px;
+}
+
+.card-container.big-card .card .title {
+    margin: 8px 0 2px;
+}
+
+
+.card-container.big-card .card .title.light {
+    color: #9B9B9B;
+}
+
+.card-container.big-card .card .copy-button-container {
+    display: flex;
+    gap: 10px;
+    width: max-content;
+}
+
+.card-container.big-card .card .copy-button-container .icon-button {
+    display: flex;
+    height: max-content;
+    width: max-content;
+    margin-top: 4px;
+}
+
+.card-container.big-card .card .copy-button-container .icon-button .logo svg {
+    width: 15px;
+    height: max-content;
+}
+
+.card-container.big-card .card .copy-button-container .icon-button .logo {
+    display: flex;
+    width: max-content;
+}
+
+.card-container.big-card .card .copy-button-container .icon-button .logo svg {
+    width: 15px;
+}
+
+.card-container.big-card .card .copy-button-container .icon-button .logo svg path {
+    stroke: #b9b9b9;
+}
+
+/* download card  */
+
+.download-images .card .form .input-container.react-select .css-13cymwt-control,
+.download-images .card .form .input-container.react-select .css-t3ipsp-control,
+.download-images .card .form .input-container.react-select .css-b62m3t-container {
+    height: 40px;
+    max-width: 170px;
+}
+
+
+.download-images .card .form .input-container.react-select .css-1xc3v61-indicatorContainer,
+.download-images .card .form .input-container.react-select .css-15lsz6c-indicatorContainer {
+    display: none;
+}
+
+.download-images .card .form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    /* margin: 10px 0 0; */
+
+}
+
+.download-images .card .form .form-row {
+    gap: 0;
+}
+
+.download-images .card .form .form-row>div {
+    flex-grow: 0;
+}
+
+.download-images .card .form .input-container.react-select {
+    flex-grow: 1;
+}
+
+.download-images .card .form .form-row .icon-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #111;
+}
+
+
+.download-image .card-container.big-card .card .image-container {
+    width: 220px;
+    height: 132px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.download-image .card-container.big-card .card .image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 0;
+    overflow: default;
+}
+
+
+.download-images .card .form .input-container .error {
+    top: 42px;
+    left: 5px;
+}
+
+.download-images .card .form .input-container.react-select .css-b62m3t-container {
+    margin: 0;
+}
+
+
+/* block and unblock button  */
+
+.card-container .card .image-container .absolute-button {
+    position: absolute;
+    top: 12px;
+    right: 24px;
+}
